@@ -20,6 +20,6 @@ segments, info = model.transcribe(
 print("\nTranscription:")
 
 for segment in segments:
-    print(f"[{segment.start:.2f}s → {segment.end:.2f}s] {segment.text}")
+    print(f"[{segment.start:.2f}s - {segment.end:.2f}s] {segment.text}")
 
 print("\nDone.")
