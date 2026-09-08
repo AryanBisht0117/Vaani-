@@ -1,0 +1,7 @@
+numpy
+sounddevice
+silero-vad
+faster-whisper
+llama-cpp-python
+fastapi
+uvicorn
