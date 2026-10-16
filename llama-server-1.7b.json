@@ -1,0 +1,12 @@
+{
+  "models": [
+    {
+      "model": "models/Qwen3-1.7B-Q4_K_M.gguf",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "n_ctx": 1024,
+      "n_threads": 8
+    }
+  ]
+}
