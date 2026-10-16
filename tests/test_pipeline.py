@@ -231,10 +231,12 @@ class AudioTests(unittest.TestCase):
         stream = MagicMock()
         stream.__enter__.return_value.read.return_value = (np.zeros((CHUNK_SIZE, 1), dtype=np.float32), False)
         clips = queue.Queue()
-        with patch("core.audio.continuous_listener.load_silero_vad"), patch("core.audio.continuous_listener.VADIterator", return_value=vad), patch("core.audio.continuous_listener.sd.InputStream", return_value=stream), patch("core.audio.continuous_listener.MAX_RECORDING_SECONDS", 0.06):
+        with patch("core.audio.continuous_listener.resolve_builtin_microphone", return_value=12) as resolve_device, patch("core.audio.continuous_listener.load_silero_vad"), patch("core.audio.continuous_listener.VADIterator", return_value=vad), patch("core.audio.continuous_listener.sd.InputStream", return_value=stream) as input_stream, patch("core.audio.continuous_listener.MAX_RECORDING_SECONDS", 0.06):
             listen_continuously(clips, stop)
         self.assertGreaterEqual(clips.qsize(), 2)
         vad.reset_states.assert_called_once()
+        resolve_device.assert_called_once_with(16000)
+        self.assertEqual(input_stream.call_args.kwargs["device"], 12)
 
 
 if __name__ == "__main__":

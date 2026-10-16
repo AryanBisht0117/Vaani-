@@ -33,7 +33,7 @@ Settings can be supplied as environment variables:
 | `VAANI_WHISPER_MODEL` | `tiny` | Transcription model; larger models require separate evaluation |
 | `VAANI_BEAM_SIZE` | `5` | Transcription search width |
 | `VAANI_CPU_THREADS` | `4` | Whisper CPU thread count |
-| `VAANI_MICROPHONE_DEVICE` | System default | Device ID or device name |
+| `VAANI_BUILTIN_MICROPHONE` | Automatically detected | Exact built-in input device name; use this when detection is ambiguous |
 | `VAANI_USER_NAME` | Required | Name when launching the app directly |
 
 `app_v2.py` and `app_v2_continuous.py` use the same in-memory pipeline.

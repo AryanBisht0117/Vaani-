@@ -5,7 +5,7 @@ import queue
 import numpy as np
 import sounddevice as sd
 from silero_vad import load_silero_vad, VADIterator
-from core.config import MICROPHONE_DEVICE
+from core.audio.microphone_selection import resolve_builtin_microphone
 
 
 SAMPLE_RATE = 16000
@@ -29,6 +29,7 @@ def enqueue_latest(audio_queue, audio):
 
 
 def listen_continuously(audio_queue, stop_event, on_ready=None):
+    microphone_device = resolve_builtin_microphone(SAMPLE_RATE)
     model = load_silero_vad()
 
     vad = VADIterator(
@@ -56,7 +57,7 @@ def listen_continuously(audio_queue, stop_event, on_ready=None):
     print("Vaani microphone active. Listening continuously...")
 
     with sd.InputStream(
-        device=MICROPHONE_DEVICE,
+        device=microphone_device,
         samplerate=SAMPLE_RATE,
         channels=1,
         dtype="float32",

@@ -2,6 +2,7 @@ def main():
     import sounddevice as sd
     import numpy as np
     import wave
+    from core.audio.microphone_selection import resolve_builtin_microphone
 
     SAMPLE_RATE = 16000
     DURATION = 5
@@ -10,6 +11,7 @@ def main():
 
     audio = sd.rec(
         int(DURATION * SAMPLE_RATE),
+        device=resolve_builtin_microphone(SAMPLE_RATE),
         samplerate=SAMPLE_RATE,
         channels=1,
         dtype=np.int16

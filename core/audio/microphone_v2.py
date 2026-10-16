@@ -5,9 +5,7 @@ def main():
     import numpy as np
     import sounddevice as sd
     from silero_vad import load_silero_vad, VADIterator
-    import os
-    device = os.environ.get("VAANI_MICROPHONE_DEVICE", "").strip()
-    device = int(device) if device.isdecimal() else device or None
+    from core.audio.microphone_selection import resolve_builtin_microphone
 
     SAMPLE_RATE = 16000
     CHUNK_SIZE = 512
@@ -15,6 +13,7 @@ def main():
     MAX_RECORDING_SECONDS = 10
     PRE_SPEECH_SECONDS = 1.5
 
+    device = resolve_builtin_microphone(SAMPLE_RATE)
     model = load_silero_vad()
     vad = VADIterator(
         model,
