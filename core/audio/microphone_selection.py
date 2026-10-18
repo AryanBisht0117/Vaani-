@@ -33,9 +33,9 @@ _EXTERNAL_NAME_MARKERS = (
     "wireless",
 )
 _HOST_API_PRIORITY = (
+    "mme",
     "wasapi",
     "windows directsound",
-    "mme",
     "core audio",
     "alsa",
     "pulseaudio",
