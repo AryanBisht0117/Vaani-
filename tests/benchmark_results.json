@@ -1,0 +1,162 @@
+[
+  {
+    "file": "negative_01.wav",
+    "label": "negative",
+    "previous_context": true,
+    "transcript": "Here I am, listen to me.",
+    "seconds": 1.4162083999981405,
+    "correct": true
+  },
+  {
+    "file": "negative_02.wav",
+    "label": "negative",
+    "previous_context": true,
+    "transcript": "Can you hear me?",
+    "seconds": 1.3164971000078367,
+    "correct": true
+  },
+  {
+    "file": "negative_03.wav",
+    "label": "negative",
+    "previous_context": true,
+    "transcript": "Excuse me Michael",
+    "seconds": 1.1485766000114381,
+    "correct": true
+  },
+  {
+    "file": "negative_04.wav",
+    "label": "negative",
+    "previous_context": true,
+    "transcript": "Andrian, come here for a second.",
+    "seconds": 1.1693545000016456,
+    "correct": true
+  },
+  {
+    "file": "negative_05.wav",
+    "label": "negative",
+    "previous_context": true,
+    "transcript": "Hello Harry, are you there?",
+    "seconds": 1.103001099996618,
+    "correct": true
+  },
+  {
+    "file": "positive_01.wav",
+    "label": "positive",
+    "previous_context": true,
+    "transcript": "Hey Aryan, listen to me.",
+    "seconds": 1.03495689999545,
+    "correct": true
+  },
+  {
+    "file": "positive_02.wav",
+    "label": "positive",
+    "previous_context": true,
+    "transcript": "Arjen, can you hear me?",
+    "seconds": 1.0456505000038305,
+    "correct": false
+  },
+  {
+    "file": "positive_03.wav",
+    "label": "positive",
+    "previous_context": true,
+    "transcript": "Give me Aryan",
+    "seconds": 0.9831358999945223,
+    "correct": true
+  },
+  {
+    "file": "positive_04.wav",
+    "label": "positive",
+    "previous_context": true,
+    "transcript": "Aryan, come here for a second.",
+    "seconds": 1.1118843000003835,
+    "correct": true
+  },
+  {
+    "file": "positive_05.wav",
+    "label": "positive",
+    "previous_context": true,
+    "transcript": "Hello Aryan, are you there?",
+    "seconds": 1.1700145000068005,
+    "correct": true
+  },
+  {
+    "file": "negative_01.wav",
+    "label": "negative",
+    "previous_context": false,
+    "transcript": "Here I am, listen to me.",
+    "seconds": 1.0843697999953292,
+    "correct": true
+  },
+  {
+    "file": "negative_02.wav",
+    "label": "negative",
+    "previous_context": false,
+    "transcript": "Can you hear me?",
+    "seconds": 0.9307333999895491,
+    "correct": true
+  },
+  {
+    "file": "negative_03.wav",
+    "label": "negative",
+    "previous_context": false,
+    "transcript": "Excuse me Michael",
+    "seconds": 0.9541149999859044,
+    "correct": true
+  },
+  {
+    "file": "negative_04.wav",
+    "label": "negative",
+    "previous_context": false,
+    "transcript": "Andrian, come here for a second.",
+    "seconds": 1.0103841999953147,
+    "correct": true
+  },
+  {
+    "file": "negative_05.wav",
+    "label": "negative",
+    "previous_context": false,
+    "transcript": "Hello Harry, are you there?",
+    "seconds": 1.0105506999971112,
+    "correct": true
+  },
+  {
+    "file": "positive_01.wav",
+    "label": "positive",
+    "previous_context": false,
+    "transcript": "Hey Aryan, listen to me.",
+    "seconds": 1.0661431000044104,
+    "correct": true
+  },
+  {
+    "file": "positive_02.wav",
+    "label": "positive",
+    "previous_context": false,
+    "transcript": "Arjen, can you hear me?",
+    "seconds": 1.146087200002512,
+    "correct": false
+  },
+  {
+    "file": "positive_03.wav",
+    "label": "positive",
+    "previous_context": false,
+    "transcript": "Give me Aryan",
+    "seconds": 0.9920022000005702,
+    "correct": true
+  },
+  {
+    "file": "positive_04.wav",
+    "label": "positive",
+    "previous_context": false,
+    "transcript": "Aryan, come here for a second.",
+    "seconds": 1.0348675999994157,
+    "correct": true
+  },
+  {
+    "file": "positive_05.wav",
+    "label": "positive",
+    "previous_context": false,
+    "transcript": "Hello Aryan, are you there?",
+    "seconds": 0.9973651000036625,
+    "correct": true
+  }
+]

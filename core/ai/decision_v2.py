@@ -49,8 +49,6 @@ def _immediate_decision(transcript, user_name):
     transcript = transcript.strip()
     if not transcript:
         return "IGNORE"
-    if contains_name(transcript, user_name):
-        return "FULL_ALERT"
     normalized = " ".join(transcript.casefold().split()).strip(".!?, ")
     if STANDALONE_EMERGENCY.fullmatch(transcript):
         return "FULL_ALERT"

@@ -1,0 +1,74 @@
+[
+  {
+    "transcript": "Aryan went shopping yesterday.",
+    "expected": "IGNORE",
+    "actual": "IGNORE",
+    "seconds": 12.206386599995312
+  },
+  {
+    "transcript": "The fire drill is tomorrow.",
+    "expected": "IGNORE",
+    "actual": "IGNORE",
+    "seconds": 1.8110861999884946
+  },
+  {
+    "transcript": "Don't call the police, this is only a rehearsal.",
+    "expected": "IGNORE",
+    "actual": "IGNORE",
+    "seconds": 2.620543200013344
+  },
+  {
+    "transcript": "Can you help me, Priya?",
+    "expected": "IGNORE",
+    "actual": "IGNORE",
+    "seconds": 2.1885877000022447
+  },
+  {
+    "transcript": "Aryan, please come here.",
+    "expected": "FULL_ALERT",
+    "actual": "FULL_ALERT",
+    "seconds": 6.390000635292381e-05
+  },
+  {
+    "transcript": "Someone has fallen and is not breathing. Call an ambulance!",
+    "expected": "FULL_ALERT",
+    "actual": "FULL_ALERT",
+    "seconds": 2.105301799994777
+  },
+  {
+    "transcript": "Excuse me, could someone help me carry this?",
+    "expected": "SOFT_ALERT",
+    "actual": "SOFT_ALERT",
+    "seconds": 5.049999163020402e-05
+  },
+  {
+    "transcript": "We watched a movie last night.",
+    "expected": "IGNORE",
+    "actual": "IGNORE",
+    "seconds": 2.1314948000072036
+  },
+  {
+    "transcript": "Aryan told me he would arrive tomorrow.",
+    "expected": "IGNORE",
+    "actual": "IGNORE",
+    "seconds": 2.141031399994972
+  },
+  {
+    "transcript": "Could you open the door for me, Neha?",
+    "expected": "IGNORE",
+    "actual": "IGNORE",
+    "seconds": 2.39853160000348
+  },
+  {
+    "transcript": "Would someone please hold this door for me?",
+    "expected": "SOFT_ALERT",
+    "actual": "SOFT_ALERT",
+    "seconds": 4.2400002712383866e-05
+  },
+  {
+    "transcript": "The kitchen is on fire right now, get outside!",
+    "expected": "FULL_ALERT",
+    "actual": "FULL_ALERT",
+    "seconds": 3.058777199999895
+  }
+]
